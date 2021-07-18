@@ -6,16 +6,17 @@ def connect_db(app):
         db.app = app
         db.init_app(app)
 
+## Model is used as a placefiller reference. Make sure to change all 'Model' instances to a variable of your chooseing.
 
-class Pet(db.Model):
-    '''Database model for Users'''
+class Model(db.Model):
+    '''Database model for Models'''
 
-    __tablename__ = ''
+    __tablename__ = 'Model'
 
     def __repr__(self):
         
         u = self
-        return f'<User {u.id} '
+        return f'<Model {u.id} '
 
     id = db.Column(db.Integer,
                     primary_key=True,
