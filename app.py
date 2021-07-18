@@ -18,7 +18,7 @@ db.create_all()
 ### Main routes
 @app.route('/')
 def root():
-    '''Homepage redirects to list of all users'''
-    return redirect('/users')
+    '''Homepage directory'''
+    return redirect('/')
 
 #
