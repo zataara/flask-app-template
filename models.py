@@ -16,7 +16,7 @@ class Model(db.Model):
     def __repr__(self):
         
         u = self
-        return f'<Model {u.id} '
+        return f'<Model {u.id} >'
 
     id = db.Column(db.Integer,
                     primary_key=True,
